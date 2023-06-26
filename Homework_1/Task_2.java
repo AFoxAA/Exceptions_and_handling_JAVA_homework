@@ -12,7 +12,7 @@ public class Task_2 {
         System.out.println("Массив 2: " + Arrays.toString(array2));
 
         try {
-            int[] result = differencesOfArrayElements(array1, array2);
+            int[] result = subtractingArrayElements(array1, array2);
 
             System.out.println("\nМассив разности элементов двух массивов: " + Arrays.toString(result));
         } catch (IllegalArgumentException e) {
@@ -34,7 +34,7 @@ public class Task_2 {
     }
 
     // Вычисление разности элементов двух массивов
-    public static int[] differencesOfArrayElements(int[] array1, int[] array2) {
+    public static int[] subtractingArrayElements(int[] array1, int[] array2) {
         if (array1.length != array2.length) {
             throw new IllegalArgumentException("Длины массивов не равны");
         }

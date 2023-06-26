@@ -7,13 +7,13 @@ public class Task_1 {
 	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		actionDivision();
-		// noIndex();                                     // снять коммит для проверки
-		// handleNullPointerExceptionInStringArray();     // снять коммит для проверки
+		theDivisionByZero();
+		// nonexistentIndex();             // снять коммит для проверки
+		// nullPointerInStringArray();     // снять коммит для проверки
 	}
 
 	// Деление на ноль и корректное число
-	public static void actionDivision() {
+	public static void theDivisionByZero() {
 
 		try {
 			System.out.print("Введите первое целое число: ");
@@ -43,7 +43,7 @@ public class Task_1 {
 	}
 
 	// Обращение к несуществующему индексу
-	public static void noIndex() {
+	public static void nonexistentIndex() {
 		int[] arr = { 10, 20, 30, 40, 50 };
 
 		System.out.print("Введите номер индекса: ");
@@ -60,7 +60,7 @@ public class Task_1 {
 	}
 
 	// Обработка исключения нулевого указателя в строковом массиве
-	public static void handleNullPointerExceptionInStringArray() {
+	public static void nullPointerInStringArray() {
 		String[] array = new String[5];
 		String element = null;
 

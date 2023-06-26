@@ -12,9 +12,9 @@ public class Task_3 {
 		System.out.println("Массив 2: " + Arrays.toString(array2));
 
 		try {
-			int[] result = differencesOfArrayElements(array1, array2);
+			int[] result = divisionOfArrayElements(array1, array2);
 
-			System.out.println("\nМассив разности элементов двух массивов: " + Arrays.toString(result));
+			System.out.println("\nМассив частному элементов двух входящих массивов: " + Arrays.toString(result));
 		} catch (RuntimeException e) {
 			System.out.println("\nПоймано исключение RuntimeException: " + e.getMessage());
 		}
@@ -33,8 +33,8 @@ public class Task_3 {
 		return array;
 	}
 
-	// Вычисление разности элементов двух массивов
-	public static int[] differencesOfArrayElements(int[] array1, int[] array2) {
+	// Деление элементов первого входящего массива на элементы второго
+	public static int[] divisionOfArrayElements(int[] array1, int[] array2) {
 		if (array1.length != array2.length) {
 			throw new RuntimeException("Длины массивов не равны");
 		}
